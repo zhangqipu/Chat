@@ -122,6 +122,7 @@ NSString *ChatImageCellId = @"ChatImageCellId";
     [self.messages addObjectsFromArray:@[model1, model11, model2, model22, model3, model33]];
 
     [self.tableView reloadData];
+    [self scrollToBottom];
 }
 
 - (void)insertMessageWithType:(MessageType)type andContent:(NSString *)content;
@@ -253,11 +254,7 @@ NSString *ChatImageCellId = @"ChatImageCellId";
     [textVoiceView textViewDidChange:textView];
     
     [self.tableView reloadData];
-    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[self.messages count] - 1
-                                                              inSection:0]
-                          atScrollPosition:UITableViewScrollPositionNone
-                                  animated:YES];
-    
+    [self scrollToBottom];
 }
 
 - (void)inputToolBarBeginTextInput:(QPInputToolBar *)inputToolBar
@@ -317,6 +314,14 @@ NSString *ChatImageCellId = @"ChatImageCellId";
     [self.view endEditing:YES];
     
     [self.stateMachine changeToState:QPChatInputStateBottomTextInput];
+}
+
+- (void)scrollToBottom
+{
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[self.messages count] - 1
+                                                              inSection:0]
+                          atScrollPosition:UITableViewScrollPositionNone
+                                  animated:YES];
 }
 
 /*

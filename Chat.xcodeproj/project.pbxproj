@@ -57,6 +57,7 @@
 		E83376251C45E18E0008F979 /* QPChatAudioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E83376181C45E18E0008F979 /* QPChatAudioCell.m */; };
 		E83376261C45E18E0008F979 /* QPChatImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E833761A1C45E18E0008F979 /* QPChatImageCell.m */; };
 		E83376271C45E18E0008F979 /* QPMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E833761C1C45E18E0008F979 /* QPMessageModel.m */; };
+		E83376291C45EF590008F979 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E83376281C45EF590008F979 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,7 @@
 		E833761A1C45E18E0008F979 /* QPChatImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPChatImageCell.m; sourceTree = "<group>"; };
 		E833761B1C45E18E0008F979 /* QPMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPMessageModel.h; sourceTree = "<group>"; };
 		E833761C1C45E18E0008F979 /* QPMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPMessageModel.m; sourceTree = "<group>"; };
+		E83376281C45EF590008F979 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				E83375861C45DFCD0008F979 /* Main.storyboard */,
 				E83375891C45DFCD0008F979 /* Assets.xcassets */,
 				E833758B1C45DFCD0008F979 /* LaunchScreen.storyboard */,
+				E83376281C45EF590008F979 /* icon.png */,
 				E833758E1C45DFCD0008F979 /* Info.plist */,
 				E833757D1C45DFCD0008F979 /* Supporting Files */,
 			);
@@ -329,6 +332,7 @@
 				E83375B61C45E0360008F979 /* phone@2x.png in Resources */,
 				E83375C31C45E0360008F979 /* shake@2x.png in Resources */,
 				E833758A1C45DFCD0008F979 /* Assets.xcassets in Resources */,
+				E83376291C45EF590008F979 /* icon.png in Resources */,
 				E83375881C45DFCD0008F979 /* Main.storyboard in Resources */,
 				E83375C71C45E0360008F979 /* font@2x.png in Resources */,
 				E83375CE1C45E0360008F979 /* audio.png in Resources */,
@@ -470,7 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Chat/Classes";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Chat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.buluo.Chat;
@@ -482,7 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Chat/Classes";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Chat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.buluo.Chat;
@@ -509,6 +513,7 @@
 				E83375931C45DFCD0008F979 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
